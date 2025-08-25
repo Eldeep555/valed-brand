@@ -1,0 +1,73 @@
+/* General Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Profile Photo with Lighting Circle */
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
+              0 0 40px rgba(69, 123, 157, 0.6),
+              0 0 60px rgba(69, 123, 157, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9),
+              0 0 50px rgba(69, 123, 157, 0.9),
+              0 0 80px rgba(69, 123, 157, 1);
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+/* Skills Section */
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #457b9d;
+}
+
+/* Footer */
+footer {
+  background: #1d3557;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
