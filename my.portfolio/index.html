@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hassan Eldeep — Front-End Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Portfolio of Hassan Eldeep — Front-End Developer specializing in HTML, CSS, JavaScript, and Bootstrap." />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Hassan Eldeep</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" aria-label="Toggle dark mode">
+              <i class="bi bi-moon-stars" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container text-center reveal">
+      <p class="text-uppercase text-primary fw-semibold mb-2">Front-End Developer</p>
+      <h1 class="display-4 fw-bold mb-3">Hi, I’m <span class="text-gradient">Hassan Eldeep</span></h1>
+      <p class="lead mb-4">I build fast, responsive, and clean web interfaces using HTML, CSS, JavaScript, and Bootstrap.</p>
+      <div class="d-flex gap-2 justify-content-center">
+        <a href="#projects" class="btn btn-primary btn-lg"><i class="bi bi-rocket-takeoff me-2"></i>View Projects</a>
+        <a href="#contact" class="btn btn-outline-primary btn-lg"><i class="bi bi-envelope me-2"></i>Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="about-card p-4 rounded-4 shadow-sm h-100">
+            <h2 class="h3 fw-bold mb-3">About Me</h2>
+            <p class="mb-0">
+              I’m a front-end developer focused on crafting pixel-perfect, accessible, and performant web experiences.
+              I love turning designs into robust UI using modern best practices—clean code, reusable components, and responsive layouts.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="stat-card p-3 rounded-4 border h-100 text-center">
+                <div class="display-6 fw-bold">+10</div>
+                <div class="text-muted">Completed Mini Projects</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card p-3 rounded-4 border h-100 text-center">
+                <div class="display-6 fw-bold">100%</div>
+                <div class="text-muted">Responsive Design</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <a class="btn btn-outline-secondary w-100 py-3 rounded-4" href="#" onclick="alert('Add your CV file and link here!'); return false;">
+                <i class="bi bi-file-earmark-arrow-down me-2"></i>Download CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="h3 fw-bold text-center mb-4 reveal">Skills</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="p-4 rounded-4 border h-100">
+            <h5 class="mb-3"><i class="bi bi-code-slash me-2"></i>Core</h5>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between"><span>HTML5</span><span>90%</span></div>
+              <div class="progress"><div class="progress-bar bg-success" style="width: 90%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between"><span>CSS3</span><span>85%</span></div>
+              <div class="progress"><div class="progress-bar bg-info" style="width: 85%"></div></div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between"><span>JavaScript (ES6+)</span><span>75%</span></div>
+              <div class="progress"><div class="progress-bar bg-warning" style="width: 75%"></div></div>
+            </div>
+            <div class="mb-1">
+              <div class="d-flex justify-content-between"><span>Bootstrap 5</span><span>85%</span></div>
+              <div class="progress"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 reveal">
+          <div class="p-4 rounded-4 border h-100">
+            <h5 class="mb-3"><i class="bi bi-tools me-2"></i>Tooling & Practices</h5>
+            <ul class="list-unstyled mb-0 d-grid gap-2">
+              <li><i class="bi bi-check2"></i> Responsive, Mobile-First Layouts</li>
+              <li><i class="bi bi-check2"></i> Accessibility (ARIA, contrast, semantics)</li>
+              <li><i class="bi bi-check2"></i> Performance & best practices</li>
+              <li><i class="bi bi-check2"></i> Git & GitHub workflow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="h3 fw-bold text-center mb-4 reveal">Projects</h2>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-4 reveal">
+          <div class="card project-card h-100">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200&q=80&auto=format&fit=crop" class="card-img-top" alt="Landing page preview">
+            <div class="card-body">
+              <h5 class="card-title">Modern Landing Page</h5>
+              <p class="card-text">Responsive hero, features, and CTA built with Bootstrap utilities and custom CSS.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a class="btn btn-sm btn-primary" href="#" onclick="alert('Add live demo link'); return false;"><i class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#" onclick="alert('Add GitHub link'); return false;"><i class="bi bi-github me-1"></i>Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 reveal">
+          <div class="card project-card h-100">
+            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?w=1200&q=80&auto=format&fit=crop" class="card-img-top" alt="Dashboard UI preview">
+            <div class="card-body">
+              <h5 class="card-title">Admin Dashboard UI</h5>
+              <p class="card-text">Cards, charts placeholders, and tables with clean, accessible components.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a class="btn btn-sm btn-primary" href="#" onclick="alert('Add live demo link'); return false;"><i class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#" onclick="alert('Add GitHub link'); return false;"><i class="bi bi-github me-1"></i>Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 reveal">
+          <div class="card project-card h-100">
+            <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?w=1200&q=80&auto=format&fit=crop" class="card-img-top" alt="E-commerce UI preview">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Product UI</h5>
+              <p class="card-text">Product grid, filters, and modals using Bootstrap and vanilla JavaScript.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a class="btn btn-sm btn-primary" href="#" onclick="alert('Add live demo link'); return false;"><i class="bi bi-box-arrow-up-right me-1"></i>Live</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#" onclick="alert('Add GitHub link'); return false;"><i class="bi bi-github me-1"></i>Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-body-tertiary">
+    <div class="container">
+      <h2 class="h3 fw-bold text-center mb-4 reveal">Contact</h2>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-5 reveal">
+          <div class="p-4 rounded-4 border h-100">
+            <h5 class="mb-3"><i class="bi bi-person-lines-fill me-2"></i>Details</h5>
+            <ul class="list-unstyled d-grid gap-2 mb-0">
+              <li><i class="bi bi-envelope me-2"></i>
+                <a href="mailto:hassanelddeep@yahoo.com">hassanelddeep@yahoo.com</a>
+              </li>
+              <li><i class="bi bi-telephone me-2"></i>
+                <a href="tel:+201555091952">01555091952</a>
+              </li>
+              <li><i class="bi bi-whatsapp me-2"></i>
+                <a href="https://wa.me/201555091952?text=Hi%20Hassan%2C%20I%27m%20interested%20in%20working%20with%20you." target="_blank" rel="noopener">WhatsApp</a>
+              </li>
+              <li><i class="bi bi-github me-2"></i><a href="#" onclick="alert('Add your GitHub URL'); return false;">GitHub</a></li>
+              <li><i class="bi bi-linkedin me-2"></i><a href="#" onclick="alert('Add your LinkedIn URL'); return false;">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <form class="p-4 rounded-4 border h-100" id="contactForm">
+            <h5 class="mb-3"><i class="bi bi-chat-text me-2"></i>Send a Message</h5>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-primary"><i class="bi bi-send me-2"></i>Send</button>
+              <button type="reset" class="btn btn-outline-secondary">Clear</button>
+            </div>
+            <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <small>&copy; <span id="year"></span> Hassan Eldeep. All rights reserved.</small>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-decoration-none"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:hassanelddeep@yahoo.com" class="text-decoration-none"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Base */
+:root {
+  --radius-xl: 1.25rem;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  min-height: 88vh;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(13,110,253,0.12), transparent 60%),
+    radial-gradient(900px 450px at 110% 10%, rgba(32,201,151,0.12), transparent 60%);
+  display: grid;
+  place-items: center;
+  padding: 4rem 0;
+}
+
+/* Fancy gradient text */
+.text-gradient {
+  background: linear-gradient(90deg, #0d6efd, #20c997);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Cards */
+.about-card, .project-card, .stat-card {
+  border-radius: var(--radius-xl) !important;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Buttons */
+.btn-lg {
+  border-radius: 0.9rem;
+}
+
+/* Footer */
+footer .bi {
+  font-size: 1.25rem;
+}
+
+/* Improve focus outline for accessibility */
+:focus-visible {
+  outline: 2px dashed currentColor;
+  outline-offset: 3px;
+}
+
+/* Make progress bars rounded */
+.progress, .progress .progress-bar {
+  border-radius: 999px;
+}

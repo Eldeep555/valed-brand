@@ -1,0 +1,89 @@
+
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section {
+  padding-top: 80px;
+}
+
+/* Hero */
+#intro {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Skills badges */
+#skills .badge {
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+#skills .badge:hover {
+  transform: scale(1.1);
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Utilities Icons */
+#services i {
+  transition: transform 0.3s, color 0.3s;
+}
+#services i:hover {
+  transform: scale(1.2);
+  color: #0d6efd !important;
+}
+
+/* Back to top */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  border-radius: 50%;
+  padding: 10px 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
